@@ -4,12 +4,16 @@
 from openai import OpenAI
 import pandas as pd
 from scipy.spatial import distance
+import os
 
 #initial setup, API key, and loads contexts for the bot
 key = "key"
-contextos = pd.read_csv("cerebro.csv", sep = ";")
-client = OpenAI()
 
+currPath = os.getcwd()
+dataPath = new.join(currPath.rsplit("code", "data/cerebro.csv"))
+
+contextos = pd.read_csv(dataPath, sep = ",")
+client = OpenAI()
 
 def obtener_embeddings(texto):
     """
