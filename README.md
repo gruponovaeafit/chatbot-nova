@@ -16,8 +16,8 @@ Follow these steps to get the chat-bot up and running for testing:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/chat-bot-project.git
-   cd chat-bot-project
+   git clone https://github.com/gruponovaeafit/chatbot-nova.git
+   cd chatbot-nova
    ```
 2. **Install Dependencies**
    ```bash
