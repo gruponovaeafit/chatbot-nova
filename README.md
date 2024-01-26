@@ -31,15 +31,35 @@ Follow these steps to get the chat-bot up and running for testing:
 
 The chat-bot is designed to respond to a wide range of user inputs. Feel free to ask questions, make statements, or engage in casual conversation.
 
-User: Hello
-Chat-Bot: Hi there! How can I assist you today?
+```
+Ingresa tu pregunta!, (escribe 'exit' para salir): Hablame de Communities
 
-User: What's the weather like?
-Chat-Bot: I'm sorry, but I currently don't have weather information. I can help with general questions or have a chat with you.
+NovaBot: Las comunidades son un elemento clave en el ámbito de las relaciones públicas y especialmente en el trabajo del departamento de RRPP de NOVA. Una comunidad se puede definir como un grupo de personas con intereses o características compartidas que se unen con un propósito común.
 
-User: Tell me a joke!
-Chat-Bot: Why don't scientists trust atoms? Because they make up everything!
+ 
 
+En el contexto de NOVA, las comunidades son fundamentales para fomentar el apoyo, la participación y el compromiso de nuestro público objetivo. 
+Podemos tener comunidades dentro de nuestra universidad, como grupos de estudiantes interesados en la música, el arte, la sustentabilidad, el emprendimiento, entre otros. También podemos establecer comunidades externas, como colaboradores y colaboradoras habituales de nuestros eventos, patrocinadores y proveedores.
+
+ 
+
+Una de las formas en que el departamento de RRPP se involucra con las comunidades es a través de la construcción y mantenimiento de alianzas estratégicas. Estas alianzas nos permiten acceder a nuevos recursos, aumentar nuestra visibilidad y expandir nuestra influencia. Por ejemplo, podemos establecer alianzas con marcas reconocidas en el ámbito de la música para llevar a cabo conciertos o festivales conjuntos. También podemos establecer colaboraciones con proveedores de equipos audiovisuales para mejorar la calidad de nuestros eventos.
+
+ 
+
+Además, el departamento de RRPP se encarga de mantener una buena relación con nuestros patrocinadores. Estas relaciones son cruciales para mantener el financiamiento y los recursos necesarios para llevar a cabo nuestros eventos de manera exitosa. La comunicación constante y efectiva con 
+los patrocinadores nos permite mostrarles el retorno de inversión que obtienen al asociarse con NOVA, así como también entender sus necesidades 
+y expectativas.
+
+ 
+
+Es importante mencionar que las comunidades no solo se limitan a la gestión de alianzas y patrocinios. También debemos prestar atención a las necesidades y deseos de nuestra comunidad interna de estudiantes y miembros de NOVA. Esto implica estar presentes en las redes sociales, organizar actividades y eventos de interés para ellos, y brindar una comunicación clara y accesible.
+
+ 
+
+En resumen, las comunidades juegan un papel fundamental en el trabajo del departamento de RRPP de NOVA. A través de la construcción de alianzas 
+estratégicas y la gestión efectiva de patrocinios, buscamos fortalecer nuestra presencia y calidad en los eventos que organizamos. Además, nos enfocamos en mantener una buena relación y comunicación constante con nuestra comunidad interna y externa, asegurando así el éxito y la continuidad de nuestras actividades.
+```
 ## Testing Guidelines
 
 During the testing phase, focus on the following aspects:
