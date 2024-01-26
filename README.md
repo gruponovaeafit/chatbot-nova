@@ -21,7 +21,7 @@ Follow these steps to get the chat-bot up and running for testing:
    ```
 2. **Install Dependencies**
    ```bash
-   pip install -r requirements.txt
+   pip install -r code/requirements.txt
    ```
 3. **Run**
    ```bash
