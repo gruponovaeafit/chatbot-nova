@@ -72,8 +72,6 @@ During the testing phase, focus on the following aspects:
 
 - **Deployment Options**: Currently, there are no deployment options available. This version is intended for testing purposes only.
 
-- **Inaccuracy**: currently the Chat-Bot presents issues when presented against some prompts, using incorrect contexts
-
 ## Akwnoledgments
 
 - Thanks to Alejito, Zcharick, Samuel, Amelia and David for making this project possible.
