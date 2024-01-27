@@ -30,17 +30,20 @@ for i in range(8):
 
 contextos["Embeddings"] = context_embeddings
 
+def get_index(question):
+    question_embeddings = obtener_embeddings(question)
+    cos_distances = []
+    for i in range(len(context_embeddings)):
+        cos_distances.append(distance.cosine(contextos['Embeddings'][i],question_embeddings))
+    return cos_distances.index(abs(min(cos_distances)))
 
 def generate_response(question):
+
     """
     Function made to generate a response to user prompt
     """
-
-    question_embeddings = obtener_embeddings(question)
-    cos_distances = []
-    for i in range(8):
-        cos_distances.append(distance.cosine(contextos["Embeddings"][i],question_embeddings))
-    response = client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role": "system", "content": "Eres un miembro del grupo estudiantil NOVA."},{"role": "user", "content": f"usando el contexto {contextos['Contexto'][cos_distances.index(abs(min(cos_distances)))]}, responde:{quesinon}"}])
+    context_ind = get_index(question)
+    response = client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role": "system", "content": "Eres un miembro del grupo estudiantil NOVA."},{"role": "user", "content": f"usando el contexto {contextos['Contexto'][context_ind]}, responde:{question}"}])
     return response.choices[0].message.content
 
 # TODO Structure to connect with a frontend
