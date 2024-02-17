@@ -5,9 +5,11 @@ from openai import OpenAI
 import pandas as pd
 from scipy.spatial import distance
 import os
+import base64
 
+encoded_api_key = os.getenv('API_KEY')
+key = base64.b64decode(encoded_api_key).decode('utf-8')
 #initial setup, API key, and loads contexts for the bot
-key = "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"
 
 currPath = os.getcwd()
 new = "data/cerebro.csv"
