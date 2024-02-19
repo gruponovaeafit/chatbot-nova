@@ -67,3 +67,4 @@ fi
 if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
     hash -r 2> /dev/null
 fi
+export API_KEY="c2stVktYVTliSlFiTThFVjJWbE43UEZUM0JsYmtGSkdoUkVmWmZkbGt6RGpZeHhPMXhv"
