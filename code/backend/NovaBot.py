@@ -7,14 +7,13 @@ from scipy.spatial import distance
 import os
 import base64
 
-encoded_api_key = os.getenv('API_KEY')
-print(encoded_api_key)
+encoded_api_key = os.getenv('API_KEY'))
 key = base64.b64decode(encoded_api_key).decode('utf-8')
 #initial setup, API key, and loads contexts for the bot
 
 currPath = os.getcwd()
 new = "data/cerebro.csv"
-dataPath = new.join(currPath.rsplit("code", 1))
+dataPath = new.join(currPath.rsplit("code/backend", 1))
 
 contextos = pd.read_csv(dataPath, sep = ",")
 client = OpenAI(api_key = key)

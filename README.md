@@ -23,10 +23,22 @@ Follow these steps to get the chat-bot up and running for testing:
    ```bash
    pip install -r code/requirements.txt
    ```
-3. **Run**
+3. **Activate venv in mac/linux**
    ```bash
-   python NovaBot.py 
+   cd code
+   source chatbot/bin/activate
+   ```  
+   **Activate in Windows(CMD)**
+   ```bash
+   cd code
+   chatbot\Scripts\activate.bat
    ```
+4. **Run**
+    ```bash
+    cd backkend
+    python NovaBot.py
+
+    ```
 ## Usage
 
 The chat-bot is designed to respond to a wide range of user inputs. Feel free to ask questions, make statements, or engage in casual conversation.
