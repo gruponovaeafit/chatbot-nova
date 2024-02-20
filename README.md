@@ -19,23 +19,29 @@ Follow these steps to get the chat-bot up and running for testing:
    git clone https://github.com/gruponovaeafit/chatbot-nova.git
    cd chatbot-nova
    ```
-2. **Install Dependencies**
-   ```bash
-   pip install -r code/requirements.txt
-   ```
-3. **Activate venv in mac/linux**
+
+2. **Create a Virtual Environment inside the `code` folder call `chatbot`**
    ```bash
    cd code
+   python3 -m venv chatbot
+   ```
+
+3. **Activate venv in macOs/linux (being already in the `code` folder)**
+   ```bash
    source chatbot/bin/activate
    ```  
-   **Activate in Windows(CMD)**
+   **Activate in Windows(CMD) (being already in the `code` folder)**
    ```bash
-   cd code
-   chatbot\Scripts\activate.bat
+   /chatbot/Scripts/activate
    ```
-4. **Run**
+
+4. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. **Run**
     ```bash
-    cd backkend
+    cd backend
     python NovaBot.py
 
     ```
