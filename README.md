@@ -20,7 +20,7 @@ Follow these steps to get the chat-bot up and running for testing:
    cd chatbot-nova
    ```
 
-2. **Create a Virtual Environment inside the `code` folder call `chatbot`**
+2. **Create a Virtual Environment called `chatbot`, inside the `code` folder**
    ```bash
    cd code
    python3 -m venv chatbot
