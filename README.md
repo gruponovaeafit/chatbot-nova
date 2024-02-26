@@ -32,9 +32,13 @@ Follow these steps to get the chat-bot up and running for testing:
    ```  
    **Activate in Windows(CMD) (being already in the `code` folder)**
    ```bash
-   /chatbot/Scripts/activate
+   /chatbot/Scripts/activate.bat
    ```
+   **Activate in Windows(PS) (being already in the `code` folder)**
+   ```bash
+    /chatbot/Scripts/activate.ps1
 
+   ```
 4. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
