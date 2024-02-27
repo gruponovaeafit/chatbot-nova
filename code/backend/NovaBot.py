@@ -9,13 +9,17 @@ import base64
 
 encoded_api_key = os.getenv('API_KEY')
 key = base64.b64decode(encoded_api_key).decode('utf-8')
-#initial setup, API key, and loads contexts for the bot
-
-currPath = os.getcwd()
+#initial setup, API key, and loads contexts for the bot.
 new = "data/cerebro.csv"
-dataPath = new.join(currPath.rsplit("code/backend", 1))
-
-contextos = pd.read_csv(dataPath, sep = ",")
+# Get the absolute path of the current directory
+current_directory = os.path.dirname(__file__)
+# Navigate to the parent directory (code directory)
+parent_directory = os.path.dirname(current_directory)
+root_directory = os.path.dirname(parent_directory)
+# Construct the path to the target file relative to the parent directory
+file_path = os.path.join(root_directory, 'data', 'cerebro.csv')
+print(file_path)
+contextos = pd.read_csv(file_path, sep = ",")
 client = OpenAI(api_key = key)
 
 def obtener_embeddings(texto):
