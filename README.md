@@ -11,8 +11,9 @@ Welcome to the NovaBot project! This is a simple yet powerful chat-bot designed 
 - **Responses:** The chat-bot provides dynamic and contextually relevant responses based on the input received.
 
 ## Getting Started
+Before running the code, make sure you have the api key as an environment variable, refer to [this link](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html) on how to do so if you use a Windows-Based machine. If your machine is macOs/linux based, use the `export` command on the terminal; make sure the variable is named "API_KEY". 
 
-Follow these steps to get the chat-bot up and running for testing: 
+Follow these steps to get the chat-bot up and running for testing:
 
 1. **Clone the Repository:**
    ```bash
@@ -32,9 +33,13 @@ Follow these steps to get the chat-bot up and running for testing:
    ```  
    **Activate in Windows(CMD) (being already in the `code` folder)**
    ```bash
-   /chatbot/Scripts/activate
+   /chatbot/Scripts/activate.bat
    ```
+   **Activate in Windows(PS) (being already in the `code` folder)**
+   ```bash
+    /chatbot/Scripts/activate.ps1
 
+   ```
 4. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
