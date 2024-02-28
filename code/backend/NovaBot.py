@@ -7,7 +7,7 @@ from scipy.spatial import distance
 import os
 import base64
 
-encoded_api_key = os.getenv('API_KEY')
+encoded_api_key = os.environ.get('API_KEY')
 key = base64.b64decode(encoded_api_key).decode('utf-8')
 #initial setup, API key, and loads contexts for the bot
 
