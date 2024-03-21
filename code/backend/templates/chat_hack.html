@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"/>
-    <link rel="icon" type="image/png" href="/static/imgs/logo_pacho.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css')}}"/>
+    <link rel="icon" type="image/png" href="/static/imgs/pink_pacho.png">
 </head>
-<body>
+<body2>
 
     <div class="container-fluid h-100">
 
@@ -22,20 +22,19 @@
                     <div class="card-header msg_head">
                         <div class="d-flex bd-highlight align-items-center justify-content-between">
                             <div class="img_cont">
-                                <img src="\static\imgs\Captura de pantalla 2024-02-08 115235.png" class="rounded-circle user_img">
+                                <img src="\static\imgs\pink_pacho.png" class="rounded-circle user_img">
+                                <span class="online_icon"></span>
                             </div>
-                            <div class="user_info">
+                            <div class="user_info2">
                                 <span>NOVA Chatbot</span>
                                 <p>En línea</p>
                             </div>
                             <div class="ml-auto">
-                                
-                                    <a href="http://127.0.0.1:5000/chat_hack" class="menu-link">
-                                        <div class="d-flex align-items-center">
-                                            <img src="/static/imgs/pink_pacho.png" alt="" style="width: 50px; height: auto;">
-                                        </div>
-                                    </a>
-                                
+                                <a href="http://127.0.0.1:5000/chat" class="menu-link">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/static/imgs/logo_pacho.png" alt="" style="width: 50px; height: auto;">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -45,9 +44,9 @@
                     </div>
                     <div class="card-footer">
                         <form id="messageArea" class="input-group">
-                            <input type="text" id="text" name="msg" placeholder="Escribe un mensaje" autocomplete="off" class="form-control type_msg" required/>
+                            <input type="text" id="text" name="msg" placeholder="Escribe un mensaje" autocomplete="off" class="form-control type_msg2" required/>
                             <div class="input-group-append">
-                                <button type="submit" id="send" class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></button>
+                                <button type="submit" id="send" class="input-group-text send_btn2"><i class="fas fa-location-arrow"></i></button>
                             </div>
                         </form>
                     </div>
@@ -77,7 +76,7 @@
                 var rawText = $("#text").val();
 
                 var userHtml = '<div class="d-flex justify-content-end mb-4">' +
-                    '<div class="msg_container_send white-text d-flex flex-column align-items-end" style="font-family: Montserrat, sans-serif;">' +
+                    '<div class="msg_container_send2 white-text d-flex flex-column align-items-end" style="font-family: Montserrat, sans-serif;">' +
                         rawText +
                         '<span class="msg_time_send">' + time + '</span>' +
                     '</div>' +
@@ -95,7 +94,7 @@
                     url: "/get",
                 }).done(function(data){
                     
-                    var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="/static/imgs/Captura de pantalla 2024-02-08 115235.png" class="rounded-circle user_img_msg"></div><div class="msg_container" style="font-family: Montserrat, sans-serif;">' + data + '<span class="msg_time2">' + time + '</span></div></div>';
+                    var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="/static/imgs/pink_pacho.png" class="rounded-circle user_img_msg"></div><div class="msg_container" style="font-family: Montserrat, sans-serif;">' + data + '<span class="msg_time2">' + time + '</span></div></div>';
                     $("#messageFormeight").append($.parseHTML(botHtml));
                     
                     scrollDown();
@@ -106,5 +105,5 @@
             });
         });
     </script>
-</body>
+</body2>
 </html>

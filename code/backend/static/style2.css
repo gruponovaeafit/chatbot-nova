@@ -1,10 +1,9 @@
 /* Template Chat */
-
-body,html{
+body, html{
 	height: 100%;
 	margin: 0;
-	background: rgb(84,44,179);
-background: linear-gradient(90deg, rgba(84,44,179,1) 0%, rgba(5,156,156,1) 100%);
+	background: rgb(242,27,128);
+	background: linear-gradient(90deg, rgba(242,27,128,1) 0%, rgba(148,80,243,1) 100%);
 	/* background-image: url('/static/imgs/colores.png'); */
 	background-size: cover; 
     background-repeat: no-repeat; 
@@ -73,13 +72,14 @@ border-radius: 0 0 15px 15px !important;
 	height: 60px !important;
 	overflow-y: auto;
 }
-.type_msg:focus{
+.type_msg2:focus{
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)  !important;
 	outline:0px !important;
 	font-family: 'Montserrat', sans-serif;
-	border-color: rgb(100, 33, 218);
+	border-color: rgb(239, 43, 134);
 }
-.type_msg::placeholder {
+
+.type_msg2::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
 .type_msg:hover {
@@ -94,9 +94,9 @@ border-radius: 0 0 15px 15px !important;
 	color: white !important;
 	cursor: pointer;
 }
-.send_btn{
+.send_btn2{
 	border-radius: 0 15px 15px 0 !important;
-	background-color: rgb(100, 33, 218) !important;
+	background-color: rgb(239, 43, 134) !important;
 	border:0 !important;
 	color: white !important;
 	cursor: pointer;
@@ -155,21 +155,21 @@ border-radius: 0 0 15px 15px !important;
 .offline{
 	background-color: #c23616 !important;
 }
-.user_info{
+.user_info2{
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-left: 15px;
 }
-.user_info span{
+.user_info2 span{
 	font-size: 25px;
 	font-family: 'Montserrat', Arial, sans-serif;
 	color: rgb(10, 10, 10);
 	font-weight: bold;
 }
-.user_info p{
+.user_info2 p{
 	font-size: 14px;
 	font-family: 'Montserrat', Arial, sans-serif;
-	color: rgba(50, 184, 50, 0.6);
+	color: rgb(129, 205, 108);
 	font-weight: bold;
 }
 .video_cam{
@@ -192,12 +192,12 @@ border-radius: 0 0 15px 15px !important;
 	position: relative;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 	
 }
-.msg_container_send{
+.msg_container_send2{
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-right: 10px;
 	border-radius: 25px;
-	background-color: rgb(93, 46, 175);
+	background-color: rgb(21, 192, 231);
 	padding: 10px;
 	position: relative;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 	
@@ -277,44 +277,4 @@ border-radius: 0 0 15px 15px !important;
 .centrada {
     max-width: 100%; 
     max-height: 100%; 
-}
-
-/* Template Chat Hack */
-
-.type_msg2:focus{
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)  !important;
-	outline:0px !important;
-	font-family: 'Montserrat', sans-serif;
-	border-color: rgb(239, 43, 134);
-}
-
-.send_btn2{
-	border-radius: 0 15px 15px 0 !important;
-	background-color: rgb(239, 43, 134) !important;
-	border:0 !important;
-	color: white !important;
-	cursor: pointer;
-}
-
-.msg_container_send2{
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-right: 10px;
-	border-radius: 25px;
-	background-color: rgb(21, 192, 231);
-	padding: 10px;
-	position: relative;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 	
-	
-}
-
-body2,html2{
-	height: 100%;
-	margin: 0;
-	background: rgb(242,27,128);
-	background: linear-gradient(90deg, rgba(242,27,128,1) 0%, rgba(148,80,243,1) 100%);
-	/* background-image: url('/static/imgs/colores.png'); */
-	background-size: cover; 
-    background-repeat: no-repeat; 
-    animation: contentTransition 1s;    
 }
