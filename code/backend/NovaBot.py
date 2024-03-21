@@ -16,7 +16,7 @@ parent_directory = os.path.dirname(current_directory)
 root_directory = os.path.dirname(parent_directory)
 file_path = os.path.join(root_directory, 'data', 'cerebro.csv')
 
-contextos = pd.read_csv(file_path, sep = ",")
+contextos = pd.read_csv(file_path, sep = ";")
 client = OpenAI(api_key = key)
 
 def obtener_embeddings(texto):
@@ -28,7 +28,7 @@ def obtener_embeddings(texto):
 
 #TODO Make context embeddings persistent
 context_embeddings = []
-for i in range(8): 
+for i in range(13): 
     context_embeddings.append(obtener_embeddings(contextos["Contexto"][i]))
 
 contextos["Embeddings"] = context_embeddings
