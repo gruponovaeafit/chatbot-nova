@@ -1,15 +1,63 @@
-Categoria,Contexto
-Preguntas Generales,"El grupo estudiantil NOVA es el 13avo grupo del 5to piso en el bloque 29. Se centra en tecnología e innovación, buscando fomentar un entorno para abordar problemas cotidianos de manera creativa. NOVA está compuesto por 4 departamentos: RRPP, Mercadeo, Gestión Humana y Comunidades. Fue creado el 19 de octubre de 2022 con el propósito de ofrecer soluciones innovadoras"
-RRPP,"RRPP como  departamento de NOVA, se encarga de llevar las alianzas con otras marcas, los proveedores, patrocinadores, entre otros. Este departamento es muy importante, ya que nos da mas alcance y calidad para los eventos del grupo"
-Mercadeo,"Mercadeo es un departamento muy importante para el grupo estudiantil. Este se encarga de la imagen de la marca NOVA, de maxmizar la visivilidad y alcance del grupo, sus eventos, y de llamar la atención del publico!"
-GH,"Gestion Humana es un pilar fundamental de NOVA. Este departamento se encaga de velar por el cuidado de todos los miembros dentro del grupo estudiantil. Realizan actividades para el cuidado de los espacios del grupo, sus miembros, y se encargan de las actividades de integración para propiciar mayor coperacion, hermanismos, amistad, y en general mayor calidad huamana"
-Communities,"Communities es el departamento distintivo del grupo estudiantil. Se encarga de todas las actividades de desarrollo tecnológico. En este departamento, los miembros se organizan en equipos o 'Comunidades' para trabajar en proyectos diversos, como desarrollo de software, frontend, backend, y más. Estos proyectos pueden ser tanto internos del grupo estudiantil como colaboraciones con marcas aliadas."
-MacroEventos,"Los eventos principales de NOVA comienzan con las Hackathones, celebradas anualmente durante el primer semestre. Este desafío reúne a equipos multidisciplinarios que, en un tiempo limitado, desarrollan un producto mínimo viable para abordar desafíos establecidos por el grupo y las marcas aliadas, como el evento NEXT, el segundo macro evento de NOVA.
+﻿Categoria;Contexto
+Preguntas Generales;El grupo estudiantil NOVA es el 13avo grupo del 5to piso en el bloque 29. Se centra en tecnología e innovación, buscando fomentar un entorno para abordar problemas cotidianos de manera creativa. NOVA está compuesto por 4 departamentos: RRPP, Mercadeo, Gestión Humana y Comunidades. Fue creado el 19 de octubre de 2022 con el propósito de ofrecer soluciones innovadoras
+RRPP;"Relaciones públicas (RRPP), es bastante prometedor. Es el departamento en el que potencias tus habilidades de negociación, indagación y comunicación asertiva. Allí contactarás a grandes personajes de la industria y conseguiremos junto a ellos los patrocinios que harán brillar nuestros eventos. 
+
+En resumen, somos los encargados de vender de forma llamativa y asertiva la imagen y marca del grupo. Logramos a través de ella conseguir beneficios para nuestra comunidad."
+Mercadeo;El departamento de mercadeo es uno de los cuatro departamentos fundamentales que conforman el Grupo NOVA. Este departamento es responsable de difundir la identidad y principios del grupo en entornos digitales, encargándose del diseño gráfico y la proyección en estos medios. El departamento cuenta con tres áreas principales: managers, diseñadores y audiovisuales. Los managers son los encargados de diseñar los guiones, maquetaciones y escaletas de todos los contenidos que se publican en las redes sociales, además de dirigir el equipo de trabajo encargado del contenido, asegurando un resultado exitoso. Los diseñadores son responsables del diseño de las portadas de los reels, los posts y toda la imagen visual de NOVA. Por último, los audiovisuales se encargan de la grabación y edición del contenido multimedia.
+GH;Gestion Humana es un pilar fundamental de NOVA. Este departamento se encaga de velar por el cuidado de todos los miembros dentro del grupo estudiantil. Realizan actividades para el cuidado de los espacios del grupo, sus miembros, y se encargan de las actividades de integración para propiciar mayor coperacion, hermanismos, amistad, y en general mayor calidad huamana
+Communities;Communities es el departamento distintivo del grupo estudiantil. Se encarga de todas las actividades de desarrollo tecnológico. En este departamento, los miembros se organizan en equipos o 'Comunidades' para trabajar en proyectos diversos, como desarrollo de software, frontend, backend, y más. Estos proyectos pueden ser tanto internos del grupo estudiantil como colaboraciones con marcas aliadas.
+MacroEventos;"Los eventos principales de NOVA comienzan con las Hackathones, celebradas anualmente durante el primer semestre. Este desafío reúne a equipos multidisciplinarios que, en un tiempo limitado, desarrollan un producto mínimo viable para abordar desafíos establecidos por el grupo y las marcas aliadas, como el evento NEXT, el segundo macro evento de NOVA.
 
 La BetaHack marcó la primera versión de la Hackathon en el 2023-1 y fue el primer macro evento realizado por el grupo. Fue una versión a escala menor, donde solo participaron estudiantes de la Universidad EAFIT.
 
 NEXT se lleva a cabo en el segundo semestre de cada año con el propósito de llamar la atención de marcas y estudiantes hacia diversas áreas tecnológicas y su enorme potencial.
 
 Además de estos macro eventos, NOVA también ha brindado apoyo a varios eventos, como el 17vo Congreso de Computación Colombiano."
-NovaTalks,"Las NOVA Talks son una propues e iniciativa muy buena! Estas consisten en charlas, por algun miembro del grupo estudiantil sobre tematicas relacionadas con algo de inters para el grupo estudiantil, tanto al publico general, como a solo los miembros del propio grupo. En algunos casos, miembros de alianzas de NOVA, dieron charlas tambien"
-Alianzas,"NODO es un gran aliado y casi familiar de NOVA. Esta alianza se encarga fortalecer el desarrollo del Grupo Estudiantil para aquellos que no conocen o no tienen experiencia en el mundo de la programación y la tecnología, A futuro, el objetivo es vincular el grupo con mas alianzas que beneficien tanto a los integrantes de NOVA como a la comunidad universitaria"
+NovaTalks;Las NOVA Talks son una propues e iniciativa muy buena! Estas consisten en charlas, por algun miembro del grupo estudiantil sobre tematicas relacionadas con algo de inters para el grupo estudiantil, tanto al publico general, como a solo los miembros del propio grupo. En algunos casos, miembros de alianzas de NOVA, dieron charlas tambien
+Alianzas;NODO es un gran aliado y casi familiar de NOVA. Esta alianza se encarga fortalecer el desarrollo del Grupo Estudiantil para aquellos que no conocen o no tienen experiencia en el mundo de la programación y la tecnología, A futuro, el objetivo es vincular el grupo con mas alianzas que beneficien tanto a los integrantes de NOVA como a la comunidad universitaria
+Contacto;Para mas informacion o para contactar con nosotros de forma directa, puedes escribir a el siguiente correo: gruponova@eafit.edu.co
+Desarrollo;El Sub-Area de desarrollo, se encarga de formar a los miembros del grupo estudiantil en desarrollo de software backend y front-end. Usan herramientas como JavaScrip, CSS, Django, Python, entre otros.
+Analitica;El objetivo del sub area de analítica, es crear conocimiento en pro de formar a los miembros del grupo en el analisis de datos, en base a las siguientes tecnologías: Python, R y Business Intelligence
+Diseño;El objetivo del sub area de conocimiento de diseño: Formar a los diseñadores de UX/UI de Nova, creando conocimiento a partir de: Herramientas de Diseño gráfico, Prototipado y diseño de interfaz, Principios de diseño (UX/UI) y Accesibilidad y usabilidad
+Proyecto;El objetivo del sub area de Proyecto, es formar los lideres de proyectos, creando conocimiento a partir de la gestion de proyectos, productos, gestion de riesgos, resolución de problemas y Planificación
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
