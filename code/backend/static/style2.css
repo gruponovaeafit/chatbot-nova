@@ -1,15 +1,14 @@
-/* Template Chat */
-body, html{
-	height: 100%;
-	margin: 0;
-	background: rgb(242,27,128);
-	background: linear-gradient(90deg, rgba(242,27,128,1) 0%, rgba(148,80,243,1) 100%);
-	/* background-image: url('/static/imgs/colores.png'); */
+/* Template Chat Hack*/
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url('/static/imgs/fondo2.png');
 	background-size: cover; 
-    background-repeat: no-repeat; 
+    background-position: center; 
+	background-repeat: no-repeat; 
+	overflow-y: auto;
     animation: contentTransition 1s;    
 }
-
 @keyframes contentTransition {
     from {
         opacity: -0.5;
@@ -29,6 +28,8 @@ body, html{
 	overflow-y: auto;
 }
 .card{
+	animation: contentTransition 1s;  
+	transition: opacity 0.5s ease-in-out;
 	height: 500px;
 	border-radius: 15px !important;
 	background-color: rgb(255, 255, 255) !important;
@@ -41,9 +42,17 @@ body, html{
 	overflow-y: auto;
 	white-space: nowrap;
 }
-.msg_card_body{
-	overflow-y: auto;
+.msg_card_body {
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/static/imgs/logo_omegahack_negro.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: 50%;
+    overflow-y: auto;
+    background-position-y: 8px; 
 }
+
 .card-header{
 	border-radius: 15px 15px 0 0 !important;
 	border-bottom: 0 !important;

@@ -17,6 +17,11 @@ def nova_pacho():
 def nova_logo():
     return render_template("chat.html")
 
+@app.route("/nova_logo")
+def nova_logo_():
+    return render_template("nova_logo.html")
+
+
 @app.route("/") 
 def index():
     return render_template("nova_logo.html")

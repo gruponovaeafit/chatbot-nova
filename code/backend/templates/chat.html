@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"/>
     <link rel="icon" type="image/png" href="/static/imgs/logo_pacho.png">
+    
 </head>
-<body>
 
-    <div class="container-fluid h-100">
+<body>
+    <div id="loading-page" style="display: none;">
+        <iframe src="nova_logo" frameborder="0"></iframe>
+    </div>
+   
+
+    <div id="content" class="container-fluid h-100" style="display: none;">
 
         <div class="row justify-content-center h-100">  
     
@@ -22,23 +28,23 @@
                     <div class="card-header msg_head">
                         <div class="d-flex bd-highlight align-items-center justify-content-between">
                             <div class="img_cont">
-                                <img src="\static\imgs\Captura de pantalla 2024-02-08 115235.png" class="rounded-circle user_img">
+                                <img src="\static\imgs\logo_pacho.png" class="rounded-circle user_img">
+                                <span class="online_icon"></span>
                             </div>
                             <div class="user_info">
-                                <span>NOVA Chatbot</span>
+                                <span>NOVA ChatBot</span>
                                 <p>En línea</p>
                             </div>
                             <div class="ml-auto">
-                                
-                                    <a href="http://127.0.0.1:5000/chat_hack" class="menu-link">
-                                        <div class="d-flex align-items-center">
-                                            <img src="/static/imgs/pink_pacho.png" alt="" style="width: 50px; height: auto;">
-                                        </div>
-                                    </a>
-                                
+                                <a href="http://127.0.0.1:5000/chat_hack" class="menu-link">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/static/imgs/logo_omegahack_rosado.png" alt="" style="width: 50px; height: auto;">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
+                    
                     
                     <div id="messageFormeight" class="card-body msg_card_body">
                         
@@ -59,12 +65,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script>
+        window.addEventListener("beforeunload", function(event) {
+            window.location.href = "/";  
+        });
+        
+
+        window.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.getElementById("loading-page").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 500); 
+        });
+    </script>
+
+    <script>
         function scrollDown() {
             var chatContainer = document.getElementById("messageFormeight");
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
     </script>
+
     <script>
         $(document).ready(function(){
             
