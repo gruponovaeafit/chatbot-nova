@@ -21,6 +21,14 @@ def nova_logo():
 def nova_logo_():
     return render_template("nova_logo.html")
 
+@app.route("/nova_logo2")
+def nova_logo_2():
+    return render_template("nova_logo2.html")
+
+@app.route("/omega_logo")
+def omega_logo():
+    return render_template("omega_logo.html")
+
 
 @app.route("/") 
 def index():
