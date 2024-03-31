@@ -9,7 +9,7 @@ import base64
 
 #Initial Setup, API_KEY, and data directory
 encoded_api_key = os.environ.get('API_KEY')
-key = base64.b64decode(encoded_api_key).decode('utf-8')
+key = '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'
 
 current_directory = os.path.dirname(__file__)
 file_path = os.path.join(current_directory, 'data', 'cerebro.csv')
