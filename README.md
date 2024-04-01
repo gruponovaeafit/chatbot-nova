@@ -50,6 +50,19 @@ Follow these steps to get the chat-bot up and running for testing:
     python NovaBot.py
 
     ```
+
+## Set up the environment variable
+
+1. **Create a .env file in the root of the project**
+2. **Add the following line to the .env file**
+    ```bash
+      API_KEY=your_api_key
+      ```
+3. **Install the python-dotenv package if it is not already installed from the requirements**
+    ```bash
+    pip install python-dotenv
+    ```
+
 ## Usage
 
 The chat-bot is designed to respond to a wide range of user inputs. Feel free to ask questions, make statements, or engage in casual conversation.

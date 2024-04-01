@@ -3,3 +3,4 @@ __pycache__/
 .vercel
 .venv/
 venv/
+.env

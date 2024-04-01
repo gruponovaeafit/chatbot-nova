@@ -4,12 +4,17 @@
 from openai import OpenAI
 import pandas as pd
 from scipy.spatial import distance
+from dotenv import load_dotenv
 import os
 import base64
 
+# Load environment variables from .env file
+load_dotenv()
+
 #Initial Setup, API_KEY, and data directory
-encoded_api_key = os.environ.get('API_KEY')
-key = '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'
+# encoded_api_key = os.environ.get('API_KEY')
+# key = base64.b64decode(encoded_api_key).decode('utf-8')
+key = os.environ.get('API_KEY')
 
 current_directory = os.path.dirname(__file__)
 file_path = os.path.join(current_directory, 'data', 'cerebro.csv')
