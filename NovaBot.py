@@ -14,10 +14,8 @@ load_dotenv()
 # encoded_api_key = os.environ.get('API_KEY')
 # key = base64.b64decode(encoded_api_key).decode('utf-8')
 key = os.environ.get('API_KEY')
-print(key)
 current_directory = os.path.dirname(__file__)
 file_path = os.path.join(current_directory, 'data', 'cerebro.csv')
-print(file_path)
 contextos = pd.read_csv(file_path, sep = ";")
 client = OpenAI(api_key = key)
 
@@ -31,7 +29,6 @@ def obtener_embeddings(texto):
 #TODO Make context embeddings persistent
 context_embeddings = []
 for i in range(len(contextos)):
-    print(contextos["Categoria"][i])
     context_embeddings.append(obtener_embeddings(contextos["Contexto"][i]))
 
 contextos["Embeddings"] = context_embeddings
