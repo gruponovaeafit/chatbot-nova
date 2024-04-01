@@ -1,3 +1,5 @@
 chatbot/
 __pycache__/
 .vercel
+.venv/
+venv/
