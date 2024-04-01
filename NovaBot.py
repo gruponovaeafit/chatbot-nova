@@ -10,15 +10,14 @@ import base64
 
 # Load environment variables from .env file
 load_dotenv()
-
 #Initial Setup, API_KEY, and data directory
 # encoded_api_key = os.environ.get('API_KEY')
 # key = base64.b64decode(encoded_api_key).decode('utf-8')
 key = os.environ.get('API_KEY')
-
+print(key)
 current_directory = os.path.dirname(__file__)
 file_path = os.path.join(current_directory, 'data', 'cerebro.csv')
-
+print(file_path)
 contextos = pd.read_csv(file_path, sep = ";")
 client = OpenAI(api_key = key)
 
@@ -31,7 +30,8 @@ def obtener_embeddings(texto):
 
 #TODO Make context embeddings persistent
 context_embeddings = []
-for i in range(13): 
+for i in range(len(contextos)):
+    print(contextos["Categoria"][i])
     context_embeddings.append(obtener_embeddings(contextos["Contexto"][i]))
 
 contextos["Embeddings"] = context_embeddings
@@ -49,5 +49,5 @@ def generate_response(question):
     Function made to generate a response to user prompt
     """
     context_ind = get_index(question)
-    response = client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role": "system", "content": "Eres Pacho, la mascota del grupo estudiantil NOVA."},{"role": "user", "content": f"usando el contexto {contextos['Contexto'][context_ind]}, responde:{question}"}])
+    response = client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role": "system", "content": "Eres Pacho, el asistente del grupo estudiantil NOVA"},{"role": "user", "content": f"usando el contexto {contextos['Contexto'][context_ind]}, responde:{question}"}])
     return response.choices[0].message.content
