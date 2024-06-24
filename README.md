@@ -1,113 +1,110 @@
-# NovaBot
+# 🤖 NOVA Chatbot 1.0
 
-## Overview
+## 📝 Descripción General
 
-Welcome to the NovaBot project! This is a simple yet powerful chat-bot designed to facilitate conversations with users. Please note that this version is currently in the testing phase, and there are no deployment options available yet.
+¡Bienvenido al proyecto NOVA Chatbot! 
 
-## Features
+NOVA Chatbot es una innovadora herramienta de asistencia virtual desarrollada específicamente para el Grupo Estudiantil NOVA EAFIT. Este proyecto se centra en proporcionar respuestas rápidas, precisas y centralizadas a una amplia gama de consultas. Desde preguntas generales hasta solicitudes específicas, NOVA Chatbot está diseñado para servir tanto a personas externas interesadas en el grupo como a sus miembros activos.
 
-- **Conversation Handling:** The chat-bot is equipped to engage in meaningful conversations with users.
-- **Natural Language Understanding:** It employs Natural Language Processing (NLP) techniques to comprehend user input.
-- **Responses:** The chat-bot provides dynamic and contextually relevant responses based on the input received.
+## 🙌 Squad y Roles (v1.0)
 
-## Getting Started
-Before running the code, make sure you have the api key as an environment variable, refer to [this link](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html) on how to do so if you use a Windows-Based machine. If your machine is macOs/linux based, use the `export` command on the terminal; make sure the variable is named "API_KEY". 
+- **Lider de Proyecto:** Samuel Lopera ([sloperat@eafit.edu.co](mailto:sloperat@eafit.edu.co)).
+- **Líder de Proyecto:** Miguel Rendón ([marendonq@eafit.edu.co](mailto:marendonq@eafit.edu.co)).
+- **Análista:** Samuel Giraldo ([sgiraldoc8@eafit.edu.co](mailto:sgiraldoc8@eafit.edu.co)).
+- **Diseñadora - Desarrolladora:** Lina Ballesteros ([lsballestm@eafit.edu.co](mailto:lsballestm@eafit.edu.co)).
 
-Follow these steps to get the chat-bot up and running for testing:
+## 🌟 Características
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/gruponovaeafit/chatbot-nova.git
-   cd chatbot-nova
-   ```
+- **Respuestas Instantáneas:** Capacidad para responder consultas frecuentes de manera eficiente y oportuna.
+- **Información Actualizada:** Acceso a la información más reciente sobre eventos, iniciativas y noticias del grupo.
+- **Interacción Amigable:** Interfaz intuitiva y fácil de usar, adaptada para una experiencia de usuario agradable.
 
-2. **Create a Virtual Environment called `chatbot`, inside the `code` folder**
-   ```bash
-   cd code
-   python3 -m venv chatbot
-   ```
+## ¿Por qué NOVA Chatbot?
 
-3. **Activate venv in macOs/linux (being already in the `code` folder)**
-   ```bash
-   source chatbot/bin/activate
-   ```  
-   **Activate in Windows(CMD) (being already in the `code` folder)**
-   ```bash
-   /chatbot/Scripts/activate.bat
-   ```
-   **Activate in Windows(PS) (being already in the `code` folder)**
-   ```bash
-    /chatbot/Scripts/activate.ps1
+Elegir ChatBot NOVA significa optar por una comunicación clara y un acceso directo a la información. Es más que un simple chatbot; es una puerta de entrada a la comprensión profunda de lo que representa NOVA EAFIT y cómo cada uno puede ser parte de esta emocionante experiencia.
 
-   ```
-4. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-5. **Run**
-    ```bash
-    cd backend
-    python NovaBot.py
+## 🚀 Comenzando
 
-    ```
+Antes de ejecutar el código, asegúrate de tener la API Key de OpenAI como una variable de entorno. Debes solicitar esta clave al equipo de desarrollo y crear un archivo `.env` en el directorio raíz del proyecto.
 
-## Set up the environment variable
+Sigue estos pasos para poner en marcha el chatbot para pruebas:
 
-1. **Create a .env file in the root of the project**
-2. **Add the following line to the .env file**
-    ```bash
-      API_KEY=your_api_key
-      ```
-3. **Install the python-dotenv package if it is not already installed from the requirements**
-    ```bash
-    pip install python-dotenv
-    ```
+### Clonar el Repositorio
 
-## Usage
-
-The chat-bot is designed to respond to a wide range of user inputs. Feel free to ask questions, make statements, or engage in casual conversation.
-
+```bash
+git clone https://github.com/gruponovaeafit/chatbot-nova.git
+cd chatbot-nova
 ```
-Ingresa tu pregunta!, (escribe 'exit' para salir): Hablame de Communities
 
-NovaBot: Las comunidades son un elemento clave en el ámbito de las relaciones públicas y especialmente en el trabajo del departamento de RRPP de NOVA. Una comunidad se puede definir como un grupo de personas con intereses o características compartidas que se unen con un propósito común.
+### Crear y Activar el Entorno Virtual
 
- 
+En Linux/MacOS:
 
-En el contexto de NOVA, las comunidades son fundamentales para fomentar el apoyo, la participación y el compromiso de nuestro público objetivo. 
-Podemos tener comunidades dentro de nuestra universidad, como grupos de estudiantes interesados en la música, el arte, la sustentabilidad, el emprendimiento, entre otros. También podemos establecer comunidades externas, como colaboradores y colaboradoras habituales de nuestros eventos, patrocinadores y proveedores.
+1. Crear el Entorno Virtual:
 
- 
+   ```bash
+   python3 -m venv venv
+   ```
 
-Una de las formas en que el departamento de RRPP se involucra con las comunidades es a través de la construcción y mantenimiento de alianzas estratégicas. Estas alianzas nos permiten acceder a nuevos recursos, aumentar nuestra visibilidad y expandir nuestra influencia. Por ejemplo, podemos establecer alianzas con marcas reconocidas en el ámbito de la música para llevar a cabo conciertos o festivales conjuntos. También podemos establecer colaboraciones con proveedores de equipos audiovisuales para mejorar la calidad de nuestros eventos.
+2. Activar el Entorno Virtual:
 
- 
+   ```bash
+   source venv/bin/activate
+   ```
 
-Además, el departamento de RRPP se encarga de mantener una buena relación con nuestros patrocinadores. Estas relaciones son cruciales para mantener el financiamiento y los recursos necesarios para llevar a cabo nuestros eventos de manera exitosa. La comunicación constante y efectiva con 
-los patrocinadores nos permite mostrarles el retorno de inversión que obtienen al asociarse con NOVA, así como también entender sus necesidades 
-y expectativas.
+En Windows:
 
- 
+1. Crear el Entorno Virtual:
 
-Es importante mencionar que las comunidades no solo se limitan a la gestión de alianzas y patrocinios. También debemos prestar atención a las necesidades y deseos de nuestra comunidad interna de estudiantes y miembros de NOVA. Esto implica estar presentes en las redes sociales, organizar actividades y eventos de interés para ellos, y brindar una comunicación clara y accesible.
+   ```bash
+   python -m venv venv
+   ```
+2. Activar el Entorno Virtual (CMD):
 
- 
+   ```bash
+   venv\Scripts\activate.bat
+   ```
+3. Activar el Entorno Virtual (PowerShell):
 
-En resumen, las comunidades juegan un papel fundamental en el trabajo del departamento de RRPP de NOVA. A través de la construcción de alianzas 
-estratégicas y la gestión efectiva de patrocinios, buscamos fortalecer nuestra presencia y calidad en los eventos que organizamos. Además, nos enfocamos en mantener una buena relación y comunicación constante con nuestra comunidad interna y externa, asegurando así el éxito y la continuidad de nuestras actividades.
+   ```bash
+   venv\Scripts\Activate.ps1
+   ```
+
+### Instalar Dependencias
+```bash
+pip install -r requirements.txt
 ```
-## Testing Guidelines
+### Configurar la Variable de Entorno
+1. Crear un Archivo `.env` en el Directorio Raíz del Proyecto.
+2. Agregar la Siguiente Línea al Archivo `.env`:
 
-During the testing phase, focus on the following aspects:
+   ```bash
+   API_KEY=tu_api_key
+   ```
+3. Instalar el Paquete python-dotenv si no está Instalado:
 
-- **Input Variations**: Test the chat-bot with a variety of inputs to ensure robustness.
-- **Context Retention**: Check if the chat-bot maintains context in longer conversations.
-- **Error Handling**: Test how the chat-bot handles unexpected or invalid inputs.
+   ```bash
+   pip install python-dotenv
+   ```
+###  Ejecutar el Chatbot
+```bash
+cd backend
+python NovaBot.py
+```
+## 💬 Uso
+El chatbot está diseñado para responder a una amplia gama de entradas de los usuarios. Siéntete libre de hacer preguntas, realizar afirmaciones o entablar una conversación casual.
 
-## Known Issues
+```bash
+Ingresa tu pregunta! (escribe 'exit' para salir): Hablame de Communities
+```
+```bash
+NovaBot: Las comunidades son un elemento clave en el ámbito de las relaciones 
+públicas y especialmente en el trabajo del departamento de RRPP de NOVA...
+```
 
-- **Deployment Options**: Currently, there are no deployment options available. This version is intended for testing purposes only.
+## 🧪 Lineamientos para Pruebas
+Durante la fase de prueba, enfócate en los siguientes aspectos:
 
-## Akwnoledgments
-
-- Thanks to Alejito, Zcharick, Samuel, Amelia and David for making this project possible.
+- **Variaciones de Entrada:** Prueba el chatbot con una variedad de entradas para asegurar su robustez.
+- **Retención de Contexto:** Verifica si el chatbot mantiene el contexto en conversaciones más largas.
+- **Manejo de Errores:** Prueba cómo el chatbot maneja entradas inesperadas o inválidas.
