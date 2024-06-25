@@ -93,6 +93,12 @@ pip install -r requirements.txt
 cd backend
 python NovaBot.py
 ```
+
+## 🧠 Cerebro
+
+Ver archivo [CEREBRO.md](https://github.com/gruponovaeafit/chatbot-nova/blob/main/CEREBRO.md) para conocer más detalles de los datos de entrenamiento y el proceso de fine-tuning del NOVA Chatbot.
+
+
 ## 💬 Uso
 El chatbot está diseñado para responder a una amplia gama de entradas de los usuarios. Siéntete libre de hacer preguntas, realizar afirmaciones o entablar una conversación casual.
 
