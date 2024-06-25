@@ -8,7 +8,7 @@ NOVA Chatbot es una innovadora herramienta de asistencia virtual desarrollada es
 
 ## 🙌 Squad y Roles (v1.0)
 
-![Banner Proyectos Communities - GitHub](https://github.com/gruponovaeafit/chatbot-nova/assets/65176988/cb76d646-699e-4868-9089-a8e583249b9a)
+![Banner Proyectos Communities - GitHub](https://github.com/gruponovaeafit/chatbot-nova/assets/65176988/b4da98fd-5e3e-42a8-85f8-4b3584bd42d9)
 
 - **Lider de Proyecto:** Samuel Lopera ([sloperat@eafit.edu.co](mailto:sloperat@eafit.edu.co)).
 - **Líder de Proyecto:** Miguel Rendón ([marendonq@eafit.edu.co](mailto:marendonq@eafit.edu.co)).
