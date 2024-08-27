@@ -1,6 +1,4 @@
-from flask import Flask, render_template, request, jsonify, redirect, url_for
-import time
-# import torch
+from flask import Flask, render_template, request
 import model.nova_bot as nv
 
 app = Flask(__name__)
