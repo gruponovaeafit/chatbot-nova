@@ -1,0 +1,22 @@
+:root {
+  font-size: 1.3rem;
+  --online-color: #35dc0c;
+}
+
+.logo-pacho {
+  width: 80px;
+  height: 80px;
+}
+
+.chat-header {
+  color: white;
+  background: #cccccc;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.online {
+  color: var(--online-color);
+}
