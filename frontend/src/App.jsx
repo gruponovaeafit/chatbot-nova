@@ -14,7 +14,7 @@ export default function App() {
 
 function AppContent() {
   return (
-    <div className="app">
+    <div className="d-flex justify-content-center align-items-center vh-100">
       <Routes>
         <Route path="/" exact element={<Nova />} />
         <Route path="/next" element={<Next />} />
