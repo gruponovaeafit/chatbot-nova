@@ -1,48 +1,70 @@
 import logoPacho from "../assets/pacho.svg";
 import userIcon from "../assets/user.svg";
-import "../css/Chat.css"
+import "../css/Chat.css";
+import ChatService from "../services/chat";
+
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function Chat() {
+  const [messages, setMessages] = useState([]);
+  const [userInput, setUserInput] = useState("");
+  const messagesEndRef = useRef(null);
+
+  const handleSendMessage = async (e) => {
+    e.preventDefault();
+    setUserInput("");
+    const userMessage = { user: true, message: userInput };
+    setMessages((prevMessages) => [...prevMessages, userMessage]);
+    const response = await ChatService.question(userInput);
+    const botMessage = { user: false, message: response.answer };
+    setMessages((prevMessages) => [...prevMessages, botMessage]);
+  };
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
   return (
     <>
-      <div
-        className="card-body"
-      >
-        <div className="d-flex flex-column">
-          <div className="d-flex align-items-start justify-content-end mb-2">
+      <div className="card-body d-flex flex-column">
+        <div className="overflow-auto flex-grow-1">
+          {messages.map((message, index) => (
             <div
-              className="text-white p-2 me-2 chat-container-user"
+              key={index}
+              className={`d-flex align-items-start justify-content-${message.user ? "end" : "start"} mb-2`}
             >
-              ¡Hola, NovaBot!
+              {message.user ? (
+                <>
+                  <div className="text-white p-2 me-2 chat-container-user">
+                    {message.message}
+                  </div>
+                  <img src={userIcon} className="rounded-circle icon-user" />
+                </>
+              ) : (
+                <>
+                  <img src={logoPacho} className="rounded-circle icon-bot me-2" />
+                  <div className="text-dark p-2 chat-container-bot">
+                    {message.message}
+                  </div>
+                </>
+              )}
             </div>
-            <img
-              src={userIcon}
-              className="rounded-circle icon-user"
-            />
-          </div>
-          <div className="d-flex align-items-end mb-2">
-            <img
-              src={logoPacho}
-              className="rounded-circle icon-bot me-2"
-            />
-            <div
-              className="text-dark p-2 chat-container-bot"
-            >
-              Hola, ¿En qué puedo ayudarte?
-            </div>
-          </div>
+          ))}
+          <div ref={messagesEndRef} />
         </div>
       </div>
       <div className="card-footer">
-        <form>
+        <form onSubmit={handleSendMessage}>
           <div className="input-group">
             <input
               type="text"
               className="form-control"
               placeholder="Escribe un mensaje"
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
             />
             <button className="btn" type="submit">
-              <i class="fa-regular fa-paper-plane send-btn"></i>
+              <i className="fa-regular fa-paper-plane send-btn"></i>
             </button>
           </div>
         </form>
@@ -50,3 +72,4 @@ export default function Chat() {
     </>
   );
 }
+

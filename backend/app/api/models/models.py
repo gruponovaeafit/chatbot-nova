@@ -5,41 +5,17 @@ from pydantic import BaseModel
 # Define your data models and schemas here
 # For now, using generic examples
 
-
-class ItemPatch(BaseModel):
+class Question(BaseModel):
     """
-    Data model for partially updating an existing item.
+    Data model for chatbot questions.
 
-    This model is used when an existing item is being updated with partial data. By providing only the fields
-    that need updating, the model ensures that unnecessary changes are not made to the item in the database.
-    """
-
-    name: Optional[str] = None
-    description: Optional[str] = None
-
-
-class ItemCreate(BaseModel):
-    """
-    Data model for creating a new item.
-
-    This model is used when a new item is being created and doesn't have an ID yet. By separating the creation model
-    from the general item model, it ensures that the ID is not provided or altered during the creation process.
+    This model is used to represent the structure of the data that the chatbot expects to receive
+    when a user asks a question. The `question` attribute is a required field that contains the text
+    of the question itself. Additional fields can be added as needed to capture more information
+    about the question or the user.
     """
 
-    name: str
-    description: str
-
-
-class Item(ItemCreate):
-    """
-    Data model for an existing item.
-
-    This model extends the ItemCreate model by including an ID attribute. It's used when an item is being
-    fetched, updated, or deleted. The separation ensures that the ID is always present for existing items,
-    making it clear when an item is new (without an ID) versus when it's an existing item (with an ID).
-    """
-
-    id: str
+    question: str
 
 
 class ResponseError(BaseModel):
