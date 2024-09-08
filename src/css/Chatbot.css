@@ -1,0 +1,39 @@
+#header {
+  display: flex;
+	justify-content: flex-start;
+  width: 50%;
+}
+
+.bg-chatbot {
+  background-image: url('../assets/images/background_next.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#chat {
+  width: 50%;
+}
+
+#chat-input {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #chat {
+    width: 100%;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  #chat-input {
+    width: 100%;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  #header {
+    width: 100%;
+  }
+}
