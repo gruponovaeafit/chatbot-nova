@@ -1,22 +1,35 @@
 :root {
-  font-size: 1.3rem;
-  --online-color: #35dc0c;
+  --header-background: #f5f5f5;
 }
 
-.logo-pacho {
-  width: 80px;
-  height: 80px;
+.header-bg {
+  background: var(--header-background);
 }
 
-.chat-header {
-  color: white;
-  background: #cccccc;
-}
-
-.card {
-  border-radius: 15px;
+.bot-name {
+  color: var(--bot-name-color);
 }
 
 .online {
   color: var(--online-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.bg-chatbot {
+  background-image: url("../assets/images/background_next.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  #header {
+    width: 100%;
+  }
 }

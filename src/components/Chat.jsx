@@ -1,9 +1,10 @@
+import "../css/Chat.css";
 import logoPacho from "../assets/pacho.svg";
 import userIcon from "../assets/user.svg";
-import "../css/Chat.css";
+import sendIcon from "../assets/send-icon.svg";
 import ChatService from "../services/chat";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 
 export default function Chat() {
   const [messages, setMessages] = useState([]);
@@ -26,24 +27,24 @@ export default function Chat() {
 
   return (
     <>
-      <div className="card-body d-flex flex-column">
-        <div className="overflow-auto flex-grow-1">
+      <div className="px-4" id="chat-container">
+        <div className="w-1/2 mx-auto" id="chat">
           {messages.map((message, index) => (
             <div
               key={index}
-              className={`d-flex align-items-start justify-content-${message.user ? "end" : "start"} mb-2`}
+              className={`flex justify-${message.user ? "end" : "start"} py-2`}
             >
               {message.user ? (
                 <>
-                  <div className="text-white p-2 me-2 chat-container-user">
+                  <div className="text-white p-2 me-2 rounded-lg chat-container-user">
                     {message.message}
                   </div>
-                  <img src={userIcon} className="rounded-circle icon-user" />
+                  <img src={userIcon} className="rounded-full icon-user" />
                 </>
               ) : (
                 <>
-                  <img src={logoPacho} className="rounded-circle icon-bot me-2" />
-                  <div className="text-dark p-2 chat-container-bot">
+                  <img src={logoPacho} className="rounded-full icon-bot me-2" />
+                  <div className="text-dark p-2 rounded-lg chat-container-bot">
                     {message.message}
                   </div>
                 </>
@@ -53,23 +54,28 @@ export default function Chat() {
           <div ref={messagesEndRef} />
         </div>
       </div>
-      <div className="card-footer">
-        <form onSubmit={handleSendMessage}>
-          <div className="input-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Escribe un mensaje"
-              value={userInput}
-              onChange={(e) => setUserInput(e.target.value)}
-            />
-            <button className="btn" type="submit">
-              <i className="fa-regular fa-paper-plane send-btn"></i>
-            </button>
-          </div>
-        </form>
+
+      <div className="w-full flex justify-center p-2 fixed bottom-0">
+        <div className="w-1/2 mx-auto" id="chat-input">
+          <form onSubmit={handleSendMessage}>
+            <div className="flex">
+              <input
+                type="text"
+                className="w-full p-2 border rounded-md focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                placeholder="Escribe un mensaje..."
+                value={userInput}
+                onChange={(e) => setUserInput(e.target.value)}
+              />
+              <button
+                type="submit"
+                className="ml-2 p-2 bg-white text-white rounded-md hover:bg-gray-100"
+              >
+                <img src={sendIcon} alt="send" className="w-6" />
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </>
   );
 }
-

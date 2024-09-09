@@ -5,21 +5,42 @@
   --send-btn-color: #562eaf;
 }
 
-.card-header {
-  background-color: #f8f9fa;
+
+#chat-container {
+  height: 80vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
-.card-body {
-  height: 70vh;
-  overflowy: scroll;
+#chat {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
-.bg-primary {
-  background-color: #007bff !important;
+#chat-input {
+  width: 50%;
 }
 
-.bg-light {
-  background-color: #f8f9fa !important;
+@media (max-width: 768px) {
+  #chat {
+    width: 100%;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    flex-direction: column;
+    display: flex;
+  }
+
+  #chat-input {
+    width: 100%;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  #header {
+    width: 100%;
+  }
 }
 
 .chat-container-bot {
@@ -52,8 +73,4 @@
 .icon-user {
   width: 65px;
   height: 65px;
-}
-
-.send-btn {
-  color: var(--send-btn-color);
 }

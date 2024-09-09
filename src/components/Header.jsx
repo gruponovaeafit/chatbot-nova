@@ -4,14 +4,15 @@ import logoPacho from "../assets/pacho.svg";
 
 export default function Header({ chatBotName }) {
   return (
-    <div className="chat-header d-flex align-items-center">
-      <img
-        src={logoPacho}
-        className="rounded-circle me-2 logo-pacho"
-      />
-      <div className="d-flex flex-column">
-        <h5 className="mb-0">{chatBotName}</h5>
-        <span className="online">En línea</span>
+    <div className="flex justify-center h-16 header-bg">
+      <div className="flex items-center header-container">
+        <img src={logoPacho} alt="logo" className="w-20" />
+        <div className="ml-4">
+          <p className="text-2xl font-bold bot-name">
+            {chatBotName}
+            <span className="block text-sm online">En línea</span>
+          </p>
+        </div>
       </div>
     </div>
   );
