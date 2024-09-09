@@ -1,46 +1,13 @@
-/* src/App.css */
-body,
-html {
-  height: 100%;
-  margin: 0;
-  overflow-y: auto;
-  animation: contentTransition 1s;
-}
-
-.chat-header {
-  background: #cccccc;
-}
-
-#logo-nova {
-  display: none;
-}
-
 #nova {
-  display: none;
+  --header-background: #CCCCCC;
+  --chat-container-bot-background: white;
+  --chat-container-user-background: #562EAF;
+  --icon-bot-background: #562EAF;
+  --online-color: #35DC0C;
+  --bot-name-color: white;
+  --send-btn-color: #6460FF;
 }
-
-.card {
-  border-radius: 15px;
-}
-
-.card-header {
-  background-color: #f8f9fa;
-}
-
-.card-body {
-  background-color: #e9ecef;
-}
-
-.bg-primary {
-  background-color: #007bff !important;
-}
-
-.bg-light {
-  background-color: #f8f9fa !important;
-}
-
-/* Template Nova Loading Page */
 
 .loading-screen-nova {
-  --loading-screen-background: rgb(100, 33, 218);
+  --loading-screen-background: #562EAF;
 }

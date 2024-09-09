@@ -7,23 +7,26 @@ import { useEffect } from "react";
 import logoNova from "../assets/images/logo_nova.png";
 
 export default function Nova() {
-  useEffect(() => { 
+  useEffect(() => {
     handleLoadingScreen({ pageName: "nova" });
-  } , []);
+  }, []);
+
   return (
     <>
-      <div className="container-fluid h-100 loading-screen-nova" id="loading-screen">
-        <div className="row h-100">
-          <div className="d-flex align-items-center justify-content-center">
-            <img src={logoNova} className="main-img" />
-          </div>
+      {/* Loading Screen */}
+      <div
+        className="w-full h-screen flex items-center justify-center loading-screen-nova"
+        id="loading-screen"
+      >
+        <div className="w-1/2 flex justify-center">
+          <img src={logoNova} className="main-img" alt="Loading..." />
         </div>
       </div>
-      <div className="container" id="nova">
-        <div className="card">
-          <Header chatBotName={"NOVA ChatBot"} />
-          <Chat />
-        </div>
+
+      {/* Main Content */}
+      <div className="w-full min-h-screen flex flex-col bg-chatbot" id="nova">
+        <Header chatBotName={"NOVA ChatBot"} />
+        <Chat />
       </div>
     </>
   );
