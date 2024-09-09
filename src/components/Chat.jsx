@@ -6,6 +6,11 @@ import ChatService from "../services/chat";
 
 import React, { useState, useEffect, useRef } from "react";
 
+/**
+ * Chat component for displaying and sending messages.
+ *
+ * @returns {JSX.Element} The rendered Chat component.
+ */
 export default function Chat() {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");

@@ -6,6 +6,11 @@ import { handleLoadingScreen } from "../utils/loadingScreen";
 import { useEffect } from "react";
 import logoNova from "../assets/images/logo_nova.png";
 
+/**
+ * Renders the Nova component.
+ *
+ * @returns {JSX.Element} The rendered Nova component.
+ */
 export default function Nova() {
   useEffect(() => {
     handleLoadingScreen({ pageName: "nova" });

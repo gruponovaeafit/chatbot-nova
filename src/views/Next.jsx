@@ -6,6 +6,11 @@ import Header from "../components/Header";
 import { handleLoadingScreen } from "../utils/loadingScreen";
 import logoNext from "../assets/images/logo_next.png";
 
+/**
+ * Renders the Next component.
+ *
+ * @returns {JSX.Element} The rendered Next component.
+ */
 export default function Next() {
   useEffect(() => {
     handleLoadingScreen({ pageName: "next" });

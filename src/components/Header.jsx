@@ -2,6 +2,13 @@ import React from "react";
 import "../css/Header.css";
 import logoPacho from "../assets/pacho.svg";
 
+/**
+ * Renders the header component for the chatbot.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.chatBotName - The name of the chatbot.
+ * @returns {JSX.Element} The rendered header component.
+ */
 export default function Header({ chatBotName }) {
   return (
     <div className="flex justify-center h-16 header-bg">

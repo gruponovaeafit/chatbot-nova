@@ -6,6 +6,11 @@ import Header from "../components/Header";
 import logoOmegahack from "../assets/images/logo_omegahack_blanco.png";
 import { handleLoadingScreen } from "../utils/loadingScreen";
 
+/**
+ * Renders the Omegahack component.
+ *
+ * @returns {JSX.Element} The rendered Omegahack component.
+ */
 export default function Omegahack() {
   useEffect(() => {
     handleLoadingScreen({ pageName: "omegahack" });
@@ -24,7 +29,10 @@ export default function Omegahack() {
       </div>
 
       {/* Main Content */}
-      <div className="w-full min-h-screen flex flex-col bg-chatbot" id="omegahack">
+      <div
+        className="w-full min-h-screen flex flex-col bg-chatbot"
+        id="omegahack"
+      >
         <Header chatBotName={"NOVA OmegaBot"} />
         <Chat />
       </div>
