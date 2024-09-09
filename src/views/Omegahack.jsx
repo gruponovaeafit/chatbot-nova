@@ -15,22 +15,18 @@ export default function Omegahack() {
     <>
       {/* Loading Screen */}
       <div
-        className="container-fluid h-100 loading-screen-omegahack"
+        className="w-full h-screen flex items-center justify-center loading-screen-omegahack"
         id="loading-screen"
       >
-        <div className="row h-100">
-          <div className="d-flex align-items-center justify-content-center">
-            <img src={logoOmegahack} className="main-img" alt="Loading..." />
-          </div>
+        <div className="w-1/2 flex justify-center">
+          <img src={logoOmegahack} className="main-img" alt="Loading..." />
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="container" id="omegahack">
-        <div className="card">
-          <Header chatBotName={"NOVA OmegaBot"} />
-          <Chat />
-        </div>
+      <div className="w-full min-h-screen flex flex-col bg-chatbot" id="omegahack">
+        <Header chatBotName={"NOVA OmegaBot"} />
+        <Chat />
       </div>
     </>
   );
