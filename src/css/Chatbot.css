@@ -1,18 +1,27 @@
 #header {
   display: flex;
-	justify-content: flex-start;
+  justify-content: flex-start;
   width: 50%;
 }
 
 .bg-chatbot {
-  background-image: url('../assets/images/background_next.png'); 
+  background-image: url("../assets/images/background_next.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
+#chat-container {
+  height: 80vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
 #chat {
+  display: flex;
+  flex-direction: column;
   width: 50%;
 }
 
@@ -25,6 +34,8 @@
     width: 100%;
     margin: 0.5rem;
     font-size: 0.8rem;
+    flex-direction: column;
+    display: flex;
   }
 
   #chat-input {
