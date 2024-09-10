@@ -6,7 +6,7 @@ import axios from "axios";
  * @class
  */
 class ChatService {
-  serverUrl = `http://${import.meta.env.VITE_SERVER_IP}:8000`;
+  serverUrl = import.meta.env.VITE_SERVER_URL;
   apiName = import.meta.env.VITE_API_NAME;
 
   /**
