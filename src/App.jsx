@@ -6,16 +6,18 @@ import "./App.css";
 
 export default function App() {
   return (
-    <Next />
+    <div className="font-inter">
+      <Next />
+    </div>
   );
 }
 
 function AppContent() {
   return (
-      <Routes>
-        <Route path="/" exact element={<Nova />} />
-        <Route path="/next" element={<Next />} />
-        <Route path="/omegahack" element={<Omegahack />} />
-      </Routes>
+    <Routes>
+      <Route path="/" exact element={<Nova />} />
+      <Route path="/next" element={<Next />} />
+      <Route path="/omegahack" element={<Omegahack />} />
+    </Routes>
   );
 }
