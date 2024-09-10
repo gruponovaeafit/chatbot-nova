@@ -29,7 +29,7 @@
 }
 
 @media (max-width: 768px) {
-  #header {
+  .header-container {
     width: 100%;
   }
 }
