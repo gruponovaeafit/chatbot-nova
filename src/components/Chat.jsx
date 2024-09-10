@@ -1,5 +1,5 @@
 import "../css/Chat.css";
-import logoPacho from "../assets/pacho.svg";
+import logoPacho from "../assets/images/pacho.png";
 import userIcon from "../assets/user.svg";
 import sendIcon from "../assets/send-icon.svg";
 import ChatService from "../services/chat";
