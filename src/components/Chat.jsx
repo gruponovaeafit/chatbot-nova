@@ -37,7 +37,7 @@ export default function Chat() {
           {messages.map((message, index) => (
             <div
               key={index}
-              className={`flex justify-${message.user ? "end" : "start"} py-2`}
+              className={`flex ${message.user ? "justify-end" : "justify-start"} py-2`}
             >
               {message.user ? (
                 <>
