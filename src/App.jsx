@@ -9,7 +9,7 @@ export default function App() {
   const height = useViewportHeight();
 
   return (
-    <div className="font-inter" style={{ height: `${height}px` }}>
+    <div className="font-inter supports-[height:100cqh]:h-[100cqh] supports-[height:100svh]:h-[100svh]">
       <Next />
     </div>
   );
