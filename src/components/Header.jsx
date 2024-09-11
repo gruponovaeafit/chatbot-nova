@@ -16,7 +16,7 @@ export default function Header({ chatBotName }) {
         <img src={logoPacho} alt="logo" className="w-12 lg:w-16 h-12 lg:h-16" />
         <p className="text-xl font-bold bot-name mb-0">
           {chatBotName}
-          <span className="block text-sm online">En línea</span>
+          <span className="block text-sm font-normal online">En línea</span>
         </p>
       </div>
     </div>

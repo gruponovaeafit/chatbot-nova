@@ -10,3 +10,11 @@
   color: var(--online-color);
 }
 
+.online::before {
+  content: "•";
+  color: var(--online-dot-color);
+  font-size: 1.2rem;
+  margin-right: 5px;
+  vertical-align: center;
+}
+
