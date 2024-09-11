@@ -60,7 +60,7 @@ export default function Chat() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center mb-1 h-[10vh]">
+      <div className="w-full flex justify-center mb-1 h-[10vh] fixed bottom-0">
         <div className="w-full lg:w-1/2 m-[0.5rem] lg:m-0 text-[0.8rem] lg:text-[1rem]">
           <form onSubmit={handleSendMessage}>
             <div className="flex">
