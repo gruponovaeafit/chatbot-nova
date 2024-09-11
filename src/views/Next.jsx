@@ -20,7 +20,7 @@ export default function Next() {
     <>
       {/* Loading Screen */}
       <div
-        className="w-full h-screen flex items-center justify-center loading-screen-next"
+        className="w-full flex items-center justify-center loading-screen-next"
         id="loading-screen"
       >
         <div className="w-1/2 flex justify-center">
@@ -29,7 +29,7 @@ export default function Next() {
       </div>
 
       {/* Main Content */}
-      <div className="w-full h-screen flex flex-col bg-chatbot" id="next">
+      <div className="w-full flex flex-col bg-chatbot" id="next">
         <Header chatBotName={"NOVA NextBot"} />
         <Chat />
       </div>
