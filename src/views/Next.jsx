@@ -29,7 +29,7 @@ export default function Next() {
       </div>
 
       {/* Main Content */}
-      <div className="w-full min-h-screen flex flex-col bg-chatbot" id="next">
+      <div className="w-full h-screen flex flex-col bg-chatbot" id="next">
         <Header chatBotName={"NOVA NextBot"} />
         <Chat />
       </div>
