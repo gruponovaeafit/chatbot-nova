@@ -19,11 +19,26 @@ export default function Chat() {
   const handleSendMessage = async (e) => {
     e.preventDefault();
     setUserInput("");
-    const userMessage = { user: true, message: userInput };
+    let currentTime = getCurrentTime();
+    const userMessage = { user: true, message: userInput, time: currentTime };
     setMessages((prevMessages) => [...prevMessages, userMessage]);
+    currentTime = getCurrentTime();
     const response = await ChatService.question(userInput);
-    const botMessage = { user: false, message: response.answer };
+    const botMessage = {
+      user: false,
+      message: response.answer,
+      time: currentTime,
+    };
     setMessages((prevMessages) => [...prevMessages, botMessage]);
+  };
+
+  const getCurrentTime = () => {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const formattedHours = hours % 12 || 12; // Convert to 12-hour format
+    const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+    return `${formattedHours}:${formattedMinutes}`;
   };
 
   useEffect(() => {
@@ -41,16 +56,26 @@ export default function Chat() {
             >
               {message.user ? (
                 <>
-                  <div className="text-white p-2 me-2 rounded-lg chat-container-user">
-                    {message.message}
+                  <div className="flex flex-col items-end">
+                    <div className="text-white p-2 me-2 rounded-lg chat-container-user">
+                      {message.message}
+                    </div>
+                    <div className="text-xs px-2 text-gray-400 mt-1">
+                      {message.time}
+                    </div>
                   </div>
                   <img src={userIcon} className="rounded-full icon-user" />
                 </>
               ) : (
                 <>
                   <img src={logoPacho} className="rounded-full icon-bot me-2" />
-                  <div className="text-dark p-2 rounded-lg chat-container-bot">
-                    {message.message}
+                  <div className="flex flex-col items-start">
+                    <div className="text-dark p-2 rounded-lg chat-container-bot">
+                      {message.message}
+                    </div>
+                    <div className="text-xs px-2 text-gray-400 mt-1">
+                      {message.time}
+                    </div>
                   </div>
                 </>
               )}
