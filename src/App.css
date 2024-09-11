@@ -1,5 +1,11 @@
 :root {
   font-size: 1.3em;
-  --loading-screen-background: #6460ff;
 }
 
+.bg-chatbot {
+  background-image: var(--background-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100dvh;
+}
