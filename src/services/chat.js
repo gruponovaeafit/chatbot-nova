@@ -7,7 +7,6 @@ import axios from "axios";
  */
 class ChatService {
   serverUrl = import.meta.env.VITE_SERVER_URL;
-  apiName = import.meta.env.VITE_API_NAME;
 
   /**
    * Sends a question to the server and returns the response data.
@@ -17,7 +16,7 @@ class ChatService {
   question = async (question) => {
     try {
       const response = await axios.post(
-        `${this.serverUrl}/api/v1/${this.apiName}/`,
+        this.serverUrl,
         {
           question,
         }
