@@ -1,4 +1,4 @@
-# 🤖 NOVA Chatbot 1.0
+# 🤖 NOVA Chatbot 2.0
 
 ## 📝 Descripción General
 
