@@ -1,0 +1,20 @@
+.header-bg {
+  background: var(--header-background);
+}
+
+.bot-name {
+  color: var(--bot-name-color);
+}
+
+.online {
+  color: var(--online-color);
+}
+
+.online::before {
+  content: "•";
+  color: var(--online-dot-color);
+  font-size: 1.2rem;
+  margin-right: 5px;
+  vertical-align: center;
+}
+

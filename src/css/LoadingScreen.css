@@ -1,0 +1,49 @@
+:root {
+  --loading-screen-background: #f5f5f5;
+}
+
+#loading-screen {
+  background-color: var(--loading-screen-background);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  animation: contentTransition 2s;
+}
+
+@keyframes contentTransition {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+@keyframes logoMoving {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-55px);
+  }
+}
+
+.main-img {
+  top: 50%;
+  left: 50%;
+  max-width: 45%;
+  max-height: 45%;
+  animation-name: logoMoving;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform: translate(-50%, -50%);
+}

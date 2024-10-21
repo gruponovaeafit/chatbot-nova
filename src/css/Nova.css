@@ -1,0 +1,13 @@
+#nova {
+  --header-background: #CCCCCC;
+  --chat-container-bot-background: white;
+  --chat-container-user-background: #562EAF;
+  --icon-bot-background: #562EAF;
+  --online-color: #35DC0C;
+  --bot-name-color: white;
+  --send-btn-color: #6460FF;
+}
+
+.loading-screen-nova {
+  --loading-screen-background: #562EAF;
+}
