@@ -1,19 +1,20 @@
-# 🤖 NOVA Chatbot 1.0
+# 🤖 NOVA Chatbot 2.0
 
 ## 📝 Descripción General
 
-¡Bienvenido al proyecto NOVA Chatbot! 
+¡Bienvenido al proyecto NOVA Chatbot!
 
 NOVA Chatbot es una innovadora herramienta de asistencia virtual desarrollada específicamente para el Grupo Estudiantil NOVA EAFIT. Este proyecto se centra en proporcionar respuestas rápidas, precisas y centralizadas a una amplia gama de consultas. Desde preguntas generales hasta solicitudes específicas, NOVA Chatbot está diseñado para servir tanto a personas externas interesadas en el grupo como a sus miembros activos.
 
-## 🙌 Squad y Roles (v1.0)
+## 🙌 Squad y Roles (v2.0)
 
-![Banner Proyectos Communities - GitHub](https://github.com/gruponovaeafit/chatbot-nova/assets/65176988/b4da98fd-5e3e-42a8-85f8-4b3584bd42d9)
+![Banner Proyectos Communities - GitHub](https://github.com/user-attachments/assets/13c8de64-3907-4dca-91f6-92d6e515a21e)
 
-- **Lider de Proyecto:** Samuel Lopera ([sloperat@eafit.edu.co](mailto:sloperat@eafit.edu.co)).
-- **Líder de Proyecto:** Miguel Rendón ([marendonq@eafit.edu.co](mailto:marendonq@eafit.edu.co)).
-- **Análista:** Samuel Giraldo ([sgiraldoc8@eafit.edu.co](mailto:sgiraldoc8@eafit.edu.co)).
-- **Diseñadora - Desarrolladora:** Lina Ballesteros ([lsballestm@eafit.edu.co](mailto:lsballestm@eafit.edu.co)).
+- Lider de Proyecto: Samuel Lopera.
+- Desarrollador: Miguel Sosa.
+- Analista: José Andrés Mendoza.
+- Diseñadora: Isabella Pardo.
+- Analista: David Arismendy.
 
 ## 🌟 Características
 
@@ -27,9 +28,10 @@ Elegir ChatBot NOVA significa optar por una comunicación clara y un acceso dire
 
 ## 🚀 Comenzando
 
-Antes de ejecutar el código, asegúrate de tener la API Key de OpenAI como una variable de entorno. Debes solicitar esta clave al equipo de desarrollo y crear un archivo `.env` en el directorio raíz del proyecto.
-
 Sigue estos pasos para poner en marcha el chatbot para pruebas:
+
+> [!NOTE]
+> Para que el chatbot funcione es necesario correr la api también, esta se encuentra en el siguiente repositorio: [API NOVA Chatbot](https://github.com/gruponovaeafit/chatbot-nova-api/tree/main)
 
 ### Clonar el Repositorio
 
@@ -38,81 +40,31 @@ git clone https://github.com/gruponovaeafit/chatbot-nova.git
 cd chatbot-nova
 ```
 
-### Crear y Activar el Entorno Virtual
-
-En Linux/MacOS:
-
-1. Crear el Entorno Virtual:
-
-   ```bash
-   python3 -m venv venv
-   ```
-
-2. Activar el Entorno Virtual:
-
-   ```bash
-   source venv/bin/activate
-   ```
-
-En Windows:
-
-1. Crear el Entorno Virtual:
-
-   ```bash
-   python -m venv venv
-   ```
-2. Activar el Entorno Virtual (CMD):
-
-   ```bash
-   venv\Scripts\activate.bat
-   ```
-3. Activar el Entorno Virtual (PowerShell):
-
-   ```bash
-   venv\Scripts\Activate.ps1
-   ```
-
 ### Instalar Dependencias
-```bash
-pip install -r requirements.txt
-```
-### Configurar la Variable de Entorno
-1. Crear un Archivo `.env` en el Directorio Raíz del Proyecto.
-2. Agregar la Siguiente Línea al Archivo `.env`:
 
-   ```bash
-   API_KEY=tu_api_key
-   ```
-3. Instalar el Paquete python-dotenv si no está Instalado:
+> [!NOTE]
+> Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema.
 
-   ```bash
-   pip install python-dotenv
-   ```
-###  Ejecutar el Chatbot
 ```bash
-cd backend
-python NovaBot.py
+npm install
 ```
 
-## 🧠 Cerebro
+### Configurar las variables de entorno
 
-Ver archivo [CEREBRO.md](https://github.com/gruponovaeafit/chatbot-nova/blob/main/CEREBRO.md) para conocer más detalles de los datos de entrenamiento y el proceso de fine-tuning del NOVA Chatbot.
+1. Copiar el archivo `.env.example` y renombrarlo a `.env`:
 
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Configurar las variables de entorno en el archivo `.env`.
+
+### Ejecutar el Chatbot
+
+```bash
+npm run dev
+```
 
 ## 💬 Uso
-El chatbot está diseñado para responder a una amplia gama de entradas de los usuarios. Siéntete libre de hacer preguntas, realizar afirmaciones o entablar una conversación casual.
 
-```bash
-Ingresa tu pregunta! (escribe 'exit' para salir): Hablame de Communities
-```
-```bash
-NovaBot: Las comunidades son un elemento clave en el ámbito de las relaciones 
-públicas y especialmente en el trabajo del departamento de RRPP de NOVA...
-```
-
-## 🧪 Lineamientos para Pruebas
-Durante la fase de prueba, enfócate en los siguientes aspectos:
-
-- **Variaciones de Entrada:** Prueba el chatbot con una variedad de entradas para asegurar su robustez.
-- **Retención de Contexto:** Verifica si el chatbot mantiene el contexto en conversaciones más largas.
-- **Manejo de Errores:** Prueba cómo el chatbot maneja entradas inesperadas o inválidas.
+El chatbot está diseñado para responder a una amplia gama de entradas de los usuarios. Siéntete libre de hacer preguntas, realizar afirmaciones o entablar una conversación casual. Solo escriba su mensaje y presione Enter para recibir una respuesta instantánea.

@@ -1,0 +1,14 @@
+#omegahack {
+  --header-background: #CCCCCC;
+  --chat-container-bot-background: #ffffff;
+  --chat-container-user-background: #13C9F1;
+  --icon-bot-background: #F21B80;
+  --online-color: #9450F3;
+  --bot-name-color: white;
+  --send-btn-color: #9450F3;
+}
+
+.loading-screen-omegahack {
+  background-color: #9450F3;
+}
+
