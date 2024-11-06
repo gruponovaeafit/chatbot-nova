@@ -8,6 +8,14 @@ NOVA Chatbot es una innovadora herramienta de asistencia virtual desarrollada es
 
 ## 🙌 Squad y Roles (v2.0)
 
+![Banner Proyectos Communities - GitHub](https://github.com/user-attachments/assets/13c8de64-3907-4dca-91f6-92d6e515a21e)
+
+- Lider de Proyecto: Samuel Lopera.
+- Desarrollador: Miguel Sosa.
+- Analista: José Andrés Mendoza.
+- Diseñadora: Isabella Pardo.
+- Analista: David Arismendy.
+
 ## 🌟 Características
 
 - **Respuestas Instantáneas:** Capacidad para responder consultas frecuentes de manera eficiente y oportuna.
@@ -23,7 +31,7 @@ Elegir ChatBot NOVA significa optar por una comunicación clara y un acceso dire
 Sigue estos pasos para poner en marcha el chatbot para pruebas:
 
 > [!NOTE]
-> Para que el chatbot funcione es necesario correr la api también, esta se encuentra en el siguiente repositorio: [API NOVA Chatbot]()
+> Para que el chatbot funcione es necesario correr la api también, esta se encuentra en el siguiente repositorio: [API NOVA Chatbot](https://github.com/gruponovaeafit/chatbot-nova-api/tree/main)
 
 ### Clonar el Repositorio
 
@@ -34,15 +42,22 @@ cd chatbot-nova
 
 ### Instalar Dependencias
 
+> [!NOTE]
+> Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema.
+
 ```bash
 npm install
 ```
 
-### Copiar el archivo `.env.example` a `.env` y completar con el endpoint de la API
+### Configurar las variables de entorno
 
-```bash
-cp .env.example .env
-```
+1. Copiar el archivo `.env.example` y renombrarlo a `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Configurar las variables de entorno en el archivo `.env`.
 
 ### Ejecutar el Chatbot
 
