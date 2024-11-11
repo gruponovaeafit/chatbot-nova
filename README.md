@@ -65,6 +65,46 @@ npm install
 npm run dev
 ```
 
+## Ejecución con Docker
+
+> [!NOTE]
+> Asegúrate de tener [Docker](https://www.docker.com/) instalado en tu sistema y clonar este repositorio.
+
+En la raíz del proyecto crear un archivo `docker-compose.yml` con el siguiente contenido:
+
+> [!WARNING]
+> Asegúrate de que la variable `VITE_SERVER_URL` en el servicio `frontend` coincida con la URL de la API en el servicio `backend` y cambiar los valores de las variables de entorno según sea necesario.
+
+```yml
+services:
+  frontend:
+    build:
+      context: .
+      args:
+        VITE_SERVER_URL: http://localhost:8000/api/v1/chatbot/
+    ports:
+      - "80:80"
+
+  backend:
+    image: gruponovaeafit/chatbot-nova-api:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - API_NAME=chatbot
+      - API_KEY=123456
+      - PRODUCTION_SERVER_URL=http://localhost/
+      - DEVELOPMENT_SERVER_URL=http://localhost/
+      - LOCALHOST_SERVER_URL=http://localhost/
+      - IS_PRODUCTION=0
+```
+
+Luego, ejecutar el siguiente comando:
+
+```bash
+docker-compose up -d
+```
+
 ## 💬 Uso
 
 El chatbot está diseñado para responder a una amplia gama de entradas de los usuarios. Siéntete libre de hacer preguntas, realizar afirmaciones o entablar una conversación casual. Solo escriba su mensaje y presione Enter para recibir una respuesta instantánea.
